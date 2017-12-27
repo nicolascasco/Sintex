@@ -1,0 +1,274 @@
+#main {
+	max-width: 1200px;
+	padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+	#main {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+.main-content {
+	margin: 0px auto 20px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.image-container {
+	height: 254px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: auto;
+}
+
+.image-container .clasificado-image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.clasificado-block {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.block-main-description {
+	padding: 20px 32px 25px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.block-main-description .clasificado-dl {
+	font-size: 14px;
+	margin-bottom: 6px;
+	color: #666;
+}
+
+.clasificado-dl dt {
+	display: none;
+}
+
+.clasificado-dl dd {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.clasificado-dl dd::after {
+	content: '-';
+	margin: 0 2px 0 6px;
+}
+
+.clasificado-dl dd:last-child::after {
+	content: '';
+}
+
+.clasificado-titulo .titulo {
+	font-size: 26px;
+	line-height: 1.05;
+	font-weight: 600;
+	padding-bottom: 2px;
+}
+
+.dl-usuario {
+	float: left;
+}
+
+.dl-info {
+	float: right;
+}
+
+.clasificado-precio {
+	font-size: 28px;
+	line-height: 1;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.clasificado-precio .moneda {
+	float: left;
+}
+
+.clasificado-precio .precio {
+	float: left;
+}
+
+.preguntar {
+	background-color: #fff;
+	border-radius: 4px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.preguntar .titulo {
+	color: #333;
+	font-weight: 600;
+	line-height: 1;
+	text-align: left;
+	padding: 30px 30px 2px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.form-preguntar-container {
+	position: relative;
+	padding: 4px 30px 30px;
+}
+
+.form-preguntar .preguntar-input {
+	height: 100px;
+	width: 100%;
+	border: 1px solid #999;
+	color: #333;
+	font-size: 16px;
+	padding: 16px;
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+
+.form-preguntar .preguntar-button {
+	width: 100%;
+	border: 0;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 0;
+	outline: 0;
+	text-align: center;
+	-webkit-transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	transition: background .1s ease-in,color .1s ease-in,border .1s ease-in;
+	padding: 15px 32px;
+	background: #da251c;
+	line-height: 1;
+	color: #fff;
+}
+
+.form-preguntar .preguntar-button:focus, .form-preguntar .preguntar-button:hover {
+	background: rgba(218, 37, 28, .8);
+}
+
+.descripcion, .informacion-container {
+	border-bottom: 1px solid #d8d8d8;	
+}
+
+.block-title {
+	color: #da251c;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 32px 0 10px;
+}
+
+.descripcion .clasificado-descripcion {
+	margin: 8px 0 8px 20px;
+	font-weight: 400;
+	float: left;
+	font-size: 16px;
+}
+
+.informacion-list {
+	list-style: none;
+}
+
+.informacion-item {
+	margin: 8px 0;
+	float: left;
+	padding-right: 8px;
+	font-weight: 400;
+	width: 100%;
+}
+
+.informacion-list .informacion {
+	font-size: 20px;
+}
+
+.informacion-nombre {
+	display: table;
+	font-weight: 900;
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.pregunta-container {
+	border-radius: 4px;
+	padding: 20px 5px 20px 30px;
+	border-bottom: 1px solid #eee;
+	width: 100%; 
+	background-color: #fff;
+}
+
+.pregunta-container .pergunta-texto {
+	color: #333;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.pregunta-info {
+	font-size: 12px;
+	color: #adadad;
+	text-align: right;
+	margin-top: 10px;
+	height: 40px;
+}
+
+.pregunta-info dt {
+	display: none;
+}
+
+.pregunta-info dd {
+	display: inline-block;
+}
+
+.pregunta-info dd::after {
+	content: '-';
+	margin: 0 2px 0 6px;
+}
+
+.pregunta-info dd:last-child::after {
+	content: '';
+}
+
+.respuesta-container {
+	margin-top: 20px;
+}
+
+.respuesta-container .pregunta-texto {
+	padding-left: 15px;
+	border-left: 1px solid #eee;	
+}
+
+@media (min-width: 768px) {
+	.image-container {
+		height: 400px;
+	}
+
+	.image-container .clasificado-image {
+		object-fit: contain;
+	}
+
+	.block-main-description {
+		margin-top: 50px;
+	}
+
+	.informacion-nombre {
+		display: inline-block;
+	}
+
+	.respuesta-container {
+		margin-left: 50px;
+	}
+
+	.dl-info {
+		float: left;
+	}
+}
